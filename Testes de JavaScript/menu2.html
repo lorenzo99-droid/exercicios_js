@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        function mostraMenu() {
+
+            document.write("Menu: <br> 1 - Refrigerante <br> 2 - Suco natural <br> 3 - Chá gelado <br> 4 - Caipirinha <br><br>")
+
+        }
+
+        mostraMenu();
+
+        function escolhaBebida(escolha) {
+            var saudacao = "Olá caro(a) cliente, o que vai desejar? Temos essas opções:\n"
+            var bebidas = "1 - Refrigerante \n 2 - Suco natural \n 3 - Chá gelado \n 4 - Caipirinha"
+
+            return prompt(saudacao + bebidas)
+        }
+
+        var pedido = escolhaBebida()
+
+        function mostra() {
+            if (pedido == 1 || pedido == "refrigerante" || pedido == "Refrigerante") {
+                document.write("Você escolheu um refrigerante, custa R$ 5,00")
+            } else if (pedido == 2 || pedido == "suco natural" || pedido == "Suco natural") {
+                document.write("Você escolheu um suco natural, custa R$ 6,00")
+            } else if (pedido == 3 || pedido == "chá gelado" || pedido == "Chá gelado") {
+                document.write("Você escolheu um chá gelado, custa R$ 6,00")
+            } else if (pedido == 4 || pedido == "caipirinha" || pedido == "Caipirinha") {
+                document.write("Voce escolheu uma caipirinha, custa R$ 8,00")
+            }
+        }
+
+        mostra();
+    </script>
+</body>
+
+</html>

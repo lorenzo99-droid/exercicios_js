@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        //Semáfaros
+
+        var direcao = prompt("Em qual cor esta o sinal neste momento?");
+
+        function semaforoControle(semaforoCor) {
+            if (direcao == "vermelho") {
+                return document.write("Sinal vermelho, pare o carro agora");
+            } else if (direcao == "amarelo") {
+                return document.write("Sinal amarelo, cuidado com pedestres");
+            } else if (direcao == "verde") {
+                return document.write("Sinal verde, dirija com cuidado");
+            } else(direcao != "vermelho" || direcao != "amarelo" || direcao != "verde")
+            return document.write("Lamento, nao posso ajuda-lo");
+        }
+
+        semaforoControle();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+             function calcula(){
+
+                var idade = parseInt(prompt("Por favor me diga a sua idade"));
+                var lugar = prompt("De onde está falando?");
+                var carteira = prompt("Você tem carteira de motorista?");
+                var pais1 = "Brasil";
+                var pais2 = "Estados Unidos";
+                var resposta = "Sim";
+
+                if (lugar == pais1 && idade >= 18 && carteira == resposta){
+                
+                    return document.write("Parabéns, você tem autorização para dirigir");
+
+                } else {
+
+                   return document.write("Lamento, talvez tenha que esperar um pouco mais até estar apto a dirigir");
+                }
+
+                if (lugar == pais2 && idade >= 16 && carteira == resposta) {
+
+                   return document.write("Parabéns, você tem autorização para dirigir");
+                } else{
+
+                   return document.write("Lamento, talvez tenha que esperar um pouco mais até estar apto a dirigir");
+                }
+            }
+             
+    </script>
+</body>
+</html>

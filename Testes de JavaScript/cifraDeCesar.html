@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página top</title>
+</head>
+
+<body>
+    <script>
+        function multiplique(str) {
+
+            var solucao = "";
+            for (var i = 0; i < str.length; i++) {
+
+                var asciiNum = str[i].charCodeAt();
+                if (asciiNum >= 65 && asciiNum <= 90) {
+                    solucao += mString.fromCharCode(asciiNum * 1.1);
+                }
+            }
+            return solucao
+        }
+
+        multiplique("");
+    </script>
+</body>
+
+</html>

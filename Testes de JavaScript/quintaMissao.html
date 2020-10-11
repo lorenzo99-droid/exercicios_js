@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        function pulalinha() {
+
+            document.write("<br>");
+            document.write("<br>");
+        }
+
+
+        function mostra(texto) {
+
+            document.write(texto);
+            pulalinha();
+        }
+        function calcula() {
+
+
+            idade = parseInt(prompt("Por favor me diga a sua idade"));
+            lugar = prompt("De onde está falando?");
+            pais1 = "Brasil";
+            pais2 = "Estados Unidos";
+
+            if (lugar == pais1 && idade >= 18) {
+
+                mostra("Parabéns, você tem autorização para beber");
+
+            } else if (lugar != pais1 || idade < 18) {
+
+                mostra("Lamento, talvez tenha que esperar um pouco mais até estar apto a beber");
+            }
+
+            else if (lugar == pais2 && idade >= 21) {
+
+                mostra("Parabéns, você tem autorização para beber");
+            } else if (lugar != pais1 || idade < 21) {
+
+                mosstra("Lamento, talvez tenha que esperar um pouco mais até estar apto a beber");
+            }
+            
+        }   
+
+        calcula();
+    </script>
+</body>
+
+</html>

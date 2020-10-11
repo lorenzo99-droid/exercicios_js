@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+    </head>
+	<body>
+		<script>
+
+            function pulalinha(){
+
+                document.write("<br>");
+                document.write("<br>");
+            }
+
+
+            function mostra(texto){
+
+                document.write(texto);
+                pulalinha();
+            }
+
+            var tipo = prompt("A pizza é de qual tipo");
+            var custo = parseInt(prompt("Digite aqui  o preço da pizza"));
+            var preço = parseInt(prompt("A pizza é vendida no valor de"));
+            var lucro = preço- custo
+            var imposto = 89/10
+            var preçoComImpostos = (89/10) / custo 
+            mostra("Boa escolha, a pizza " + tipo + " é nossa especialidade.")
+
+            mostra("A valor do imposto de " + imposto + "% sobre o preço da pizza vendida é de " + preçoComImpostos + ".")
+
+            mostra("O lucro líquido desse produto é de R$" + lucro + " e o imposto é de " + imposto + "%.")
+
+        </script>
+    </body>
+</html>
+            

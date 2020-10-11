@@ -58,20 +58,21 @@
 
             function laranjas(quantidadeDeLaranja, quantidadeDeVizinhos){
 
-               
                 var quantidadeDeLaranjaPorPessoa = quantidadeDeLaranja / (quantidadeDeVizinhos + 1 );
+                return Math.trunc( quantidadeDeLaranjaPorPessoa)
                 
 
             }
+            
+                //Para mostrar números inteiros podemos usar Math.trunc() OU  parseInt()
 
+                
                 var quantidadeDeLaranja = 10
                 var quantidadeDeVizinhos = 4 + 1
-                quantidadeDeLaranjaPorPessoa = quantidadeDeLaranja / (quantidadeDeVizinhos + 1 );
                 
-
                 mostra("A quantidade total de laranjas é " + quantidadeDeLaranja + ".");
                 mostra("A quantidade de vizinhos mais o Joselito são " + quantidadeDeVizinhos + ".");
-                mostra("A quantidade de laranjas por vizinho é " + Mathroud(quantidadeDeLaranjaPorPessoa) + ".");
+                mostra("A quantidade de laranjas por vizinho é " + laranjas(quantidadeDeLaranja, quantidadeDeVizinhos)+ ".");
         
 
         
