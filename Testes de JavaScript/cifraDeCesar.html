@@ -9,20 +9,56 @@
 
 <body>
     <script>
-        function multiplique(str) {
+        /*
+        function cifraComCifraDeCesar( deslocamento, mensagem )
+        {
+        // Aonde começa o nosso alfabeto
+        var limiteInicio = "A".charCodeAt(0);
+        // Final do alfabeto
+        var limiteFinal = "Z".charCodeAt(0);
 
-            var solucao = "";
-            for (var i = 0; i < str.length; i++) {
+        // Tamanho do alfabeto
+        var intervalo = limiteFinal - limiteInicio + 1;
 
-                var asciiNum = str[i].charCodeAt();
-                if (asciiNum >= 65 && asciiNum <= 90) {
-                    solucao += mString.fromCharCode(asciiNum * 1.1);
-                }
-            }
-            return solucao
+        // Deslocamento modular
+        var deslocamentoLimitado = deslocamento % intervalo;
+
+        // Armazena a mensagem encriptada enquanto ela é construída
+        var mensagemEncriptada = "";
+
+        // Para cada letra da mensagem...
+        for ( var i = 0; i < mensagem.length; i++ )
+        {
+        // Código da letra
+        var codigoLetra = mensagem.charCodeAt(i);
+
+        // Normalizado no alfabeto
+        var codigoLetraLimitado = ( codigoLetra - limiteInicio + deslocamentoLimitado ) % intervalo;
+
+        // Joga pro valor verdadeiro
+        codigoLetra = codigoLetraLimitado + limiteInicio;
+
+        // Transforma novamente em uma letra
+        var letraCifrada = String.fromCharCode( codigoLetra );
+
+        // Concatena a letra cifrada com o que já foi construído da mensagem toda
+        mensagemEncriptada += letraCifrada;
         }
 
-        multiplique("");
+        return mensagemEncriptada;
+        }
+
+        function cifra()
+        {
+        // Pega valor do deslocamento
+        var d = parseInt( document.getElementById("deslocamento_cifra").value );
+        // Pega valor da mensagem
+        var m = document.getElementById("mensagem_cifra").value;
+
+        // Mostra um alerta com a mensagem cifrada
+        alert( cifraComCifraDeCesar(d, m) );
+        }
+        */
     </script>
 </body>
 

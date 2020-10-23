@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+       
+        function mostra(texto){
+            document.write(texto);
+            document.write("<br>");
+            document.write("<br>");
+        }
+        var nome = "Lorenzo";
+        var idade = 21
+        var ano = 2020
+        var maeIdade = 59
+        var ezIdade = 50
+        var medIdade = (idade + maeIdade + ezIdade) / 3
+
+        
+        mostra("Olá, meu nome é " + nome + ".")
+        mostra("Eu tenho " + idade + ".")
+        mostra("Eu nasci no ano de " + (ano - idade))
+        mostra("A média de idade na casa é " + Math.round(medIdade) + ".")
+        mostra("Fim.")
+
+        function calculaImc(altura, peso){
+
+            return peso / (altura * altura)
+        }
+
+        var imcLorenzo = calculaImc(1.67, 54);
+        var imcMarilza = calculaImc(1.60, 70)
+        var soma = imcLorenzo + imcMarilza 
+        var media = soma / 2
+        mostra("O IMC de Lorenzo é " + imcLorenzo + ".");
+        mostra("O IMC  de Marilza é " + imcMarilza + ".")
+        mostra("A soma é " + soma + ".")
+        mostra("A média é " + media + ".")
+    </script>
+</body>
+</html>
